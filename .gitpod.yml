@@ -1,6 +1,8 @@
 tasks:
   - command: run npm install 
     init: npm install
+  - command: run cdk install
+    init: npm install -g aws-cdk
   - name: Initialize & Configure AWS
     command: bash $GITPOD_REPO_ROOT/gitpod_scripts/gitpod_configure_aws.sh
 vscode:
