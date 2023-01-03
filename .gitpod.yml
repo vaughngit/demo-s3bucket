@@ -1,8 +1,6 @@
 tasks:
-  - command: yarn run watch
-    init: yarn install && yarn run build
-  - name: ConfigAlias
-    command: echo 'alias pj="npx projen"' >> ~/.bashrc && echo 'alias cdk="npx cdk"' >> ~/.bashrc
+  - command: run npm install 
+    init: npm install
   - name: Initialize & Configure AWS
     command: bash $GITPOD_REPO_ROOT/gitpod_scripts/gitpod_configure_aws.sh
 vscode:
